@@ -1,0 +1,21 @@
+.check-parent {
+  background-color: white; 
+  border: 1px solid #dbdadf;
+}
+.check-parent:hover {
+  background-color: white; 
+  border: 1px solid #574f98;
+}
+.check{
+  accent-color: hsl(243, 100%, 62%);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+/* .check:checked + label {
+  } */
+
+.check-parent:has(.check:checked) {
+  background-color: #f8f9fe;
+  border: 1px solid #473dff; 
+}

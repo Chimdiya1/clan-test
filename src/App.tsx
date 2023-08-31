@@ -1,16 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import UserForm from "./components/UserForm";
+import "./index.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-       
-    </>
-  )
+    <div className="bg-[#EEF5FF] w-full h-screen py-5 px-7 md:py-20 relative">
+      <UserForm />
+    </div>
+  );
 }
 
-export default App
+export default App;
