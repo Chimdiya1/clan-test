@@ -6,7 +6,7 @@ import SummaryAddon from "../SummaryAddon";
 import { useStepperContext } from "../../context/Stepper";
 export default function Summary() {
   const { watch } = useFormContext<formValuesType>();
-  const [currentStep, setCurrentStep, next, previous] = useStepperContext();
+  const [, setCurrentStep, , ] = useStepperContext();
   const watchPlan = watch("plan");
   const watchMonthly = watch("monthly");
   const watchOnlineService = watch("onlineService");
